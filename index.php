@@ -91,7 +91,7 @@
          </div>
       </div>
       <script>
-         $(document).ready(function() {
+      $(document).ready(function() {
         $('#category-dropdown').on('change', function() {
         var category_id = this.value;
         $.ajax({
@@ -104,9 +104,9 @@
             success: function(result) {
                 $("#sub-category-dropdown").html(result);
             }
-        });
-    });
-});
+            });
+         });
+      });
       </script>
    </body>
 </html>
